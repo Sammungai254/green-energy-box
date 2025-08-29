@@ -661,12 +661,75 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+/* Hero Section Background */
 .hero {
   width: 100%;
   position: relative;
   padding: 100px 0 60px 0;
   text-align: center;
+  background: linear-gradient(
+    135deg,
+    #d4f9d4 0%,   /* very light mint green */
+    #a8e6a3 50%,  /* fresh leafy green */
+    #7fd38a 100%  /* medium soft green */
+  );
+  background-size: cover;
+  background-position: center;
+  color: #333; /* default text darker since bg is light */
 }
+
+/* Encasing Box - Frosted Glass Light Green */
+.hero-box {
+  background: rgba(255, 255, 255, 0.7); /* lighter glassy white */
+  backdrop-filter: blur(10px);          
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 128, 0, 0.2); /* soft green border */
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  max-width: 900px;
+}
+
+.hero-box h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #14532d; /* rich but readable green */
+}
+
+.hero-box h2 span {
+  color: #2e8b57; /* seagreen highlight for "GREEN" */
+}
+
+.hero-box p {
+  color: #333; /* dark text for better readability */
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.hero .btn-get-started {
+  background: #2e8b57; /* green button */
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+.hero .btn-get-started:hover {
+  background: #256d46;
+}
+
+@media (max-width: 768px) {
+  .hero-box {
+    padding: 20px;
+  }
+  .hero-box h2 {
+    font-size: 32px;
+  }
+}
+
+
+
+
 
 .hero .container {
   position: relative;
