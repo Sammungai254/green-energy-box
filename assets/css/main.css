@@ -16,6 +16,25 @@
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.section-divider span {
+  flex: 1;
+  height: 2px;
+  background: #6cc24a;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.section-divider i {
+  color: #28a745;
+  font-size: 1.2rem;
+}
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
@@ -766,7 +785,33 @@ section,
 .hero .icon-box:hover .icon {
   color: var(--contrast-color);
 }
+/* Features Section (icon boxes) */
+.features {
+  padding: 60px 0;
+}
 
+.features .icon-box {
+  text-align: left;
+  min-height: 350px;
+  padding: 20px;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.features .icon-box .icon {
+  margin-bottom: 20px;
+  font-size: 48px;
+  color: var(--accent-color);
+}
+
+.features .icon-box:hover {
+  background-color: var(--accent-color);
+}
+
+.features .icon-box:hover .title a,
+.features .icon-box:hover .icon {
+  color: var(--contrast-color);
+}
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
